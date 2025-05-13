@@ -1,0 +1,19 @@
+@import "../styles/globals.css";
+
+@layer base {
+  html {
+    @apply h-full w-full m-0 p-0;
+  }
+
+  :root {
+    @apply font-sans;
+  }
+
+  body {
+    @apply h-full w-full m-0; /* Make body simply fill html */
+  }
+
+  #root {
+    @apply w-full h-full bg-background text-foreground; /* Make #root fill body and carry base styles */
+  }
+}
